@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="LILFULOGO.png">
+
+    <title>F*%K U</title>
+    <script src="js/postFB.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    
+
+    
+
+    
+
+    
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src = "js/term.ie.oauth-HMAC-SHA1.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '562646827243870',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+    FB.login(function(response) {
+    if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+}, {
+    scope: 'publish_actions, user_posts, user_about_me, user_birthday, user_education_history, user_events, user_hometown, user_likes, user_location, user_photos, user_relationships, user_relationship_details, user_religion_politics, user_tagged_places, user_work_history', 
+    return_scopes: true
+});
+    /* make the API call */
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+
+
+
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">F*%K U</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">F*%K <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#them">Them</a></li>
+                    <li><a href="#U">U</a></li>
+                    <li><a href="#why">Why?</a></li>
+                    <li><a href="#twitter?">Twitter?</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="https://www.facebook.com/">Or don't..</a></li>
+                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+   <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div id="them"></div>
+<hr class="featurette-divider">
+    <div class="container marketing">
+    
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="GoogleIcon.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Google</h2>
+          <p>F*%K your Google up.<br>Take a moment before you do this and google yourself. What's there is just the beginning, your real digital double lives in the targeted ads and insiduous social plugins. If you're sick of it click below and say <strike>F*%K U Google</strike> not available yet</p>
+          <p><a class="btn btn-default" href="https://www.google.com/policies/privacy/#infocollect" role="button"><strong>F*%K U GOOGLE &raquo;</strong></a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="FBicon.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Facebook</h2>
+          <p>F*%K your Facebook up<br>Facebook has you by the throat, every notification triggering a small release of dopamine and furhering your addiction. They know us better than our friends and know we're addicted. Cut your ties, and say F*%K U FACEBOOK</p>
+          <p><a class="btn btn-default" onClick="postPost()" role="button"><strong>F*%K FACEBOOK &raquo;</strong></a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="TwitterIcon.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Twitter</h2>
+          <p>F*%K your Twitter up.<br>Twitter is as close as you can get to a small annoying bird except there are millions of them, all tweeting their opinions thoughts and feelings, and scarily it shows some of the worst of our society. Let's ruin it and say F*%K U TWITTER</p>
+          <p><a class="btn btn-default" href="oholdermonk.github.io/F__K_ME" role="button"><strong>F*%K TWITTER &raquo;</strong></a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+<div id="U"></div>
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Introducing F*%K U.<br><span class="text-muted">Destroy yourself. Virtually.</span></h2>
+          <p class="lead">
+          The constant creep of soical media platforms and governments grasp into our online and private lives has gone on long enough. F*%K U will be the response.<br><strong>F*%K U</strong> provides the capability to disseminate incorrect and misleading information from any of your social platforms with one button. Rendering any profile of you useless and wrong.</p>
+        </div>
+
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="FULOGO.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      
+
+
+
+        
+
+      
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&middot; &copy;  2015 noiro company, inc. &middot;</p>
+        <a class="twitter-follow-button"
+        href="https://twitter.com/_F__K_U_"
+       data-size="large"> Follow @+F__K_U_</a>
+
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+     t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+ 
+       t._e = [];
+        t.ready = function(f) {
+        t._e.push(f);
+      };
+ 
+    return t;
+    }(document, "script", "twitter-wjs"));</script>
+<script src="Tweet.rb"></script>
+
+
+
+  </body>
+</html>
