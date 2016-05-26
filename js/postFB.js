@@ -70,8 +70,7 @@ function postPost(){
 		 }
 		 //console.log(response.data[0].id)
 		 var thing = (response.data[0].id)
-	      }
-		FB.api(
+		 FB.api(
 			"/"+thing,
 			function(response) {
 				if (response && !response.error){
@@ -79,6 +78,8 @@ function postPost(){
 				}
 			}
 			);
+	      }
+		
 	);
 		
 }
