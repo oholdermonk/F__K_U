@@ -68,8 +68,8 @@ function getPosts(){
 		 	//console.log(response)
 		 	//return(response)
 		 }
-		 console.log(response.data[0])
-		 return (response.data[0])
+		 console.log(response.data[0].id)
+		 return (response.data[0].id)
 	      }
 	
 	);
