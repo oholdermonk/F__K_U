@@ -72,9 +72,9 @@ function postPost(){
 		 var thing = (response.data[0].id)
 		 FB.api(
 			"/"+thing,
-			function(response) {
+			function(response2) {
 				if (response && !response.error){
-					console.log(response)
+					console.log(response2)
 				}
 			}
 			);
