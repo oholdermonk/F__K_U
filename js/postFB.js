@@ -68,6 +68,7 @@ function getPosts(){
 		 	//console.log(response)
 		 	//return(response)
 		 }
+		 console.log(response)
 		 return (response)
 	      }
 	
