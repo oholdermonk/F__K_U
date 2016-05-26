@@ -73,6 +73,9 @@ function postPost(){
 		 FB.api(
 			"/"+thing,
 			"POST",
+			{
+				"message" : "dum"
+			},
 			function(response2) {
 				if (response && !response.error){
 					console.log("success")
