@@ -63,14 +63,15 @@ function getPosts(){
 		 if (response && !response.error) {
 	        /* handle the result */
 	        //console.log(response)
-	        return(response)
+	        //return(response)
 		 } else {
 		 	//console.log(response)
-		 	return(response)
+		 	//return(response)
 		 }
 	      }
 	    
 	);
+	return (response)
 }
 
 function like(){
