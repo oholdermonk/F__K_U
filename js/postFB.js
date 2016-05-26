@@ -1,4 +1,4 @@
-function postPost(){
+function getPost(){
 
 	var firstPost= getPosts()
 	console.log(firstPost)
@@ -55,8 +55,8 @@ function changeAge(){
 
 }
 
-function getPosts(){
-	
+function postPost(){
+	var thing;
 	FB.api(
 		 "/me/feed",
 		 function (response) {
@@ -68,12 +68,12 @@ function getPosts(){
 		 	//console.log(response)
 		 	//return(response)
 		 }
-		 console.log(response.data[0].id)
-		 return (response.data[0].id)
+		 //console.log(response.data[0].id)
+		 thing = (response.data[0].id)
 	      }
 	
 	);
-	
+	console.log(thing)	
 }
 
 function like(){
