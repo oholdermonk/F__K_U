@@ -72,8 +72,13 @@ function postPost(){
 		 var thing = (response.data[0].id)
 		 FB.api(
 			"/"+thing,
+			"POST",
 			function(response2) {
 				if (response && !response.error){
+					console.log("success")
+					console.log(response2)
+				} else {
+					console.log("Failure")
 					console.log(response2)
 				}
 			}
