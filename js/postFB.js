@@ -56,7 +56,7 @@ function changeAge(){
 }
 
 function postPost(){
-	var thing;
+	
 	FB.api(
 		 "/me/feed",
 		 function (response) {
@@ -69,11 +69,18 @@ function postPost(){
 		 	//return(response)
 		 }
 		 //console.log(response.data[0].id)
-		 thing = (response.data[0].id)
+		 var thing = (response.data[0].id)
 	      }
-	
+		FB.api(
+			"/"+thing,
+			function(response) {
+				if (response && !response.error){
+					console.log(response)
+				}
+			}
+			);
 	);
-	console.log(thing)	
+		
 }
 
 function like(){
