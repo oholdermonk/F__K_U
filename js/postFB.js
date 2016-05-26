@@ -1,6 +1,6 @@
 function postPost(){
 
-	var firstPost= getPosts()[0]
+	var firstPost= getPosts()
 	console.log(firstPost)
 
 // FB.api(
