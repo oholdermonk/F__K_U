@@ -1,6 +1,6 @@
 function postPost(){
 
-	var firstPost= getPosts()
+	var firstPost= getPosts()[0]
 	console.log(firstPost)
 
 // FB.api(
@@ -63,6 +63,7 @@ function getPosts(){
 		 if (response && !response.error) {
 	        /* handle the result */
 	        //console.log(response)
+	        return(response)
 		 } else {
 		 	//console.log(response)
 		 }
