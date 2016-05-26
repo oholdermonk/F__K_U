@@ -66,6 +66,7 @@ function getPosts(){
 	        return(response)
 		 } else {
 		 	//console.log(response)
+		 	return(response)
 		 }
 	      }
 	    
