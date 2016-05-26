@@ -69,9 +69,9 @@ function getPosts(){
 		 	//return(response)
 		 }
 	      }
-	    
+	return (response)    
 	);
-	return (response)
+	
 }
 
 function like(){
