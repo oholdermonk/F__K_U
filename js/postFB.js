@@ -68,8 +68,8 @@ function getPosts(){
 		 	//console.log(response)
 		 	//return(response)
 		 }
-		 console.log(response.asArray())
-		 return (response.asArray())
+		 console.log(response.data[0])
+		 return (response.data[0])
 	      }
 	
 	);
