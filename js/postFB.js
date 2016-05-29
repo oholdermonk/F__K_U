@@ -1,22 +1,22 @@
 function getPost(){
 
-	var firstPost= getPosts()
-	console.log(firstPost)
+	//var firstPost= getPosts()
+	//console.log(firstPost)
 
-// FB.api(
-//     "/me/feed",
-//     "POST",
-//     {
-//         "message": "Testing FB remote app"
-//     },
-//     function (response) {
-//       if (response && !response.error) {
-//         console.log(response)
-//       } else {
-//       	console.log(response)
-//       }
-//     }
-// );
+ FB.api(
+     "/me/feed",
+     "POST",
+     {
+         "message": "F*%K U"
+     },
+     function (response) {
+       if (response && !response.error) {
+         console.log(response)
+       } else {
+       	console.log(response)
+       }
+     }
+ );
 }
 
 function changeName(){
