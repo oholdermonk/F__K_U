@@ -64,10 +64,10 @@ function postPost(post){
 		 function (response) {
 		 if (response && !response.error) {
 	        /* handle the result */
-	        //console.log(response)
+	        console.log(response)
 	        //return(response)
 		 } else {
-		 	//console.log(response)
+		 	console.log(response)
 		 	//return(response)
 		 }
 		}
