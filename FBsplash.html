@@ -108,12 +108,12 @@ function runPost(){
 	var test = new Date().getMonth();
 	console.log(test);
 	console.log("COOL");
-	myDataRef.push({date: test});
+	
 }
 
 
 function postPost(){
-	
+	var date = new Date().getMonth();
 	console.log("runningPost");
 	var x= document.getElementById('inputform').value;
 	FB.api(
@@ -129,7 +129,7 @@ function postPost(){
 	        console.log(response.id);
 	        //console.log(response.id);
 	        //return(response)
-	        myDataRef.push({ID: response.id})
+	        myDataRef.push({ID: response.id, DATE: date })
 	        
 		 } else {
 		 	console.log(response)
