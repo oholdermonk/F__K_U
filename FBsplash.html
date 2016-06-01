@@ -66,8 +66,29 @@
         </div>
     </div>
 </div>
+
+
+
+<button type="submit" onClick="runPost()" class="btn btn-primary btn-xl">Post</button>
 <script>
 function runPost(){
+	
+	FB.api(
+		 "/10207294527053807_10207645767354595",
+		 "DELETE",
+		 
+		 function (response) {
+		 if (response && !response.error) {
+	        /* handle the result */
+	        console.log(response)
+	        //return(response)
+		 } else {
+		 	console.log(response)
+		 	//return(response)
+		 }
+		 }
+	);
+		 }
 	
 	
 }
