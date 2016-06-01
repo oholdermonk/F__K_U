@@ -56,7 +56,7 @@ function quickOn(){
         	snapshot.forEach(function(childSnapshot){
         		var childData = snapshot.val();
         		var date = new Date().getMonth();
-        		if(childData.DATE!=date){
+        		if(childData.DATE==date){
         			console.log("BOOM");
                     FB.api(
         				childData.ID,
