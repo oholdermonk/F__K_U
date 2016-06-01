@@ -105,7 +105,8 @@
 var myDataRef = new Firebase('https://fcku.firebaseio.com/');
 
 function runPost(){
-	var test = new Date();
+	var test = new Date().toString();
+	console.log(test);
 	myDataRef.push({date: test});
 }
 
