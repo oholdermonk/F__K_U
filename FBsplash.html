@@ -56,7 +56,7 @@
 <div>
 	<div class="fill">
         <div class="cont">
-        	<div class="form-group" id="inputform">
+        	<div class="form-group">
         	
     <textarea rows="3" cols="50"  placeholder="What's on your mind?" style="display: inline; border-top:none; border-bottom:none; border-left:none; border-right: none;  background-color: rgba(0,0,0,0); outline:none; min-width:150px; max-width:300px;  font-size:x-large" id="inputform" ></textarea>
     <br>
@@ -74,7 +74,7 @@ function runPost(){
 
 function postPost(){
 	console.log("runningPost");
-	var x= document.getElementById('#inputform');
+	var x= document.getElementById('inputform').value;
 	FB.api(
 		 "/me/feed",
 		 "POST",
