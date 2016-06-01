@@ -55,10 +55,12 @@ function changeAge(){
 
 }
 
-function postPost(){
-	
+function postPost(post){
+	console.log("runningPost");
 	FB.api(
 		 "/me/feed",
+		 "POST",
+		 "message":post
 		 function (response) {
 		 if (response && !response.error) {
 	        /* handle the result */
@@ -68,27 +70,30 @@ function postPost(){
 		 	//console.log(response)
 		 	//return(response)
 		 }
-		 //console.log(response.data[0].id)
-		 var thing = (response.data[0].id)
-		 FB.api(
-			"/"+thing,
-			"POST",
-			{
-				"message" : "dum"
-			},
-			function(response2) {
-				if (response && !response.error){
-					console.log("success")
-					console.log(response2)
-				} else {
-					console.log("Failure")
-					console.log(response2)
-				}
-			}
-			);
-	      }
-		
+		}
 	);
+
+	// 	 //console.log(response.data[0].id)
+	// 	 var thing = (response.data[0].id)
+	// 	 FB.api(
+	// 		"/"+thing,
+	// 		"POST",
+	// 		{
+	// 			"message" : "dum"
+	// 		},
+	// 		function(response2) {
+	// 			if (response && !response.error){
+	// 				console.log("success")
+	// 				console.log(response2)
+	// 			} else {
+	// 				console.log("Failure")
+	// 				console.log(response2)
+	// 			}
+	// 		}
+	// 		);
+	//       }
+		
+	// );
 		
 }
 

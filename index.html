@@ -10,7 +10,7 @@
     <link rel="icon" href="LILFULOGO.png">
 
     <title>F*%K U</title>
-    <script src="js/postFB.js"></script>
+    
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,36 +45,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '562646827243870',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-    FB.login(function(response) {
-    if (response.authResponse) {
-     console.log('Welcome!  Fetching your information.... ');
-     FB.api('/me', function(response) {
-       console.log('Good to see you, ' + response.name + '.');
-     });
-    } else {
-     console.log('User cancelled login or did not fully authorize.');
-    }
-}, {
-    scope: 'publish_actions, user_posts, user_about_me, user_birthday, user_education_history, user_events, user_hometown, user_likes, user_location, user_photos, user_relationships, user_relationship_details, user_religion_politics, user_tagged_places, user_work_history', 
-    return_scopes: true
-});
-    /* make the API call */
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+    
 
 
 
