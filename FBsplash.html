@@ -105,7 +105,7 @@
 var myDataRef = new Firebase('https://fcku.firebaseio.com/');
 
 function runPost(){
-	
+	console.log(new Date())
 }
 
 
@@ -126,7 +126,7 @@ function postPost(){
 	        console.log(response.id);
 	        //console.log(response.id);
 	        //return(response)
-	        myDataRef.push({ID: response.id, date: new Date()})
+	        myDataRef.push({ID: response.id})
 	        
 		 } else {
 		 	console.log(response)
