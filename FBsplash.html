@@ -61,7 +61,7 @@
     <textarea rows="3" cols="50"  placeholder="What's on your mind?" style="display: inline; border-top:none; border-bottom:none; border-left:none; border-right: none;  background-color: rgba(0,0,0,0); outline:none; min-width:150px; max-width:300px;  font-size:x-large" id="inputform" ></textarea>
     <br>
     <br>
-    <button type="submit" onClick="runPost()" class="btn btn-primary btn-xl">Post</button>
+    <button type="submit" onClick="postPost()" class="btn btn-primary btn-xl">Post</button>
   </div>
         </div>
     </div>
@@ -71,6 +71,24 @@ function runPost(){
 	var x = document.getElementById(inputform);
 	postPost(x);
 }
+
+function postPost(){
+	console.log("runningPost");
+	FB.api(
+		 "/me/feed",
+		 "POST",
+		 "message":document.getElementById(inputform)
+		 function (response) {
+		 if (response && !response.error) {
+	        /* handle the result */
+	        console.log(response)
+	        //return(response)
+		 } else {
+		 	console.log(response)
+		 	//return(response)
+		 }
+		}
+	);
 </script>
 </body>
 </html>
