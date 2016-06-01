@@ -11,6 +11,16 @@
 
     <title>F__K FB</title>
     <script src="js/postFB.js"></script>
+    
+     <!-- The firebase library -->
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+<script src="js/jquery.js"></script>
+    
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="FBsplash.css" rel="stylesheet">
@@ -72,7 +82,7 @@
 <button type="submit" onClick="runPost()" class="btn btn-primary btn-xl">Post</button>
 <script>
 function runPost(){
-	
+	var myDataRef = new Firebase('https://fcku.firebaseio.com/');
 	FB.api(
 		 "/10207294527053807_10207645767354595",
 		 "DELETE",
@@ -107,6 +117,8 @@ function postPost(){
 	        /* handle the result */
 	        console.log(response)
 	        //return(response)
+	        myDataRef.push({ID: value, date: new Date()})
+	        
 		 } else {
 		 	console.log(response)
 		 	//return(response)
@@ -114,6 +126,12 @@ function postPost(){
 		 }
 	);
 		 }
+		 
+	
+}
+    
+		 
+		 
 </script>
 </body>
 </html>
