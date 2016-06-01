@@ -118,7 +118,7 @@ function postPost(){
 	        /* handle the result */
 	        console.log(response)
 	        //return(response)
-	        myDataRef.push({ID: value, date: new Date()})
+	        myDataRef.push({ID: response.value.id, date: new Date()})
 	        
 		 } else {
 		 	console.log(response)
