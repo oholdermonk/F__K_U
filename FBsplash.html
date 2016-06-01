@@ -81,29 +81,30 @@
 
 <button type="submit" onClick="runPost()" class="btn btn-primary btn-xl">Post</button>
 <script>
-function runPost(){
-	var myDataRef = new Firebase('https://fcku.firebaseio.com/');
-	FB.api(
-		 "/10207294527053807_10207645767354595",
-		 "DELETE",
+// function runPost(){
+	
+	// FB.api(
+	// 	 "/10207294527053807_10207645767354595",
+	// 	 "DELETE",
 		 
-		 function (response) {
-		 if (response && !response.error) {
-	        /* handle the result */
-	        console.log(response)
-	        //return(response)
-		 } else {
-		 	console.log(response)
-		 	//return(response)
-		 }
-		 }
-	);
-		 }
+	// 	 function (response) {
+	// 	 if (response && !response.error) {
+	//         /* handle the result */
+	//         console.log(response)
+	//         //return(response)
+	// 	 } else {
+	// 	 	console.log(response)
+	// 	 	//return(response)
+	// 	 }
+	// 	 }
+	// );
+	// 	 }
 	
 	
 
-
+var myDataRef = new Firebase('https://fcku.firebaseio.com/');
 function postPost(){
+	
 	console.log("runningPost");
 	var x= document.getElementById('inputform').value;
 	FB.api(
@@ -125,9 +126,9 @@ function postPost(){
 		 }
 		 }
 	);
-		 }
 		 
-	}	
+		 
+		
 }
     
 		 
