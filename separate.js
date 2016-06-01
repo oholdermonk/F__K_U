@@ -47,7 +47,7 @@ function runPost(){
 }
 
 
-function quickOn(){
+function quickPost(){
           
         myDataRef.on("child_added", function(snapshot) {
 	        var words1 = [];
