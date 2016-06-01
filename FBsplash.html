@@ -105,9 +105,7 @@
 var myDataRef = new Firebase('https://fcku.firebaseio.com/');
 
 function runPost(){
-	FB.api(
-		"/me/feed"
-		)
+	
 }
 
 
@@ -116,13 +114,15 @@ function postPost(){
 	console.log("runningPost");
 	var x= document.getElementById('inputform').value;
 	FB.api(
-		 "/10207294527053807_10207645879837407",
-		 "GET",
-		 
+		 "/me/feed",
+		 "POST",
+		 {
+		 	"message": x
+		 }
 		 function (response) {
 		 if (response && !response.error) {
 	        /* handle the result */
-	        console.log(response.value)
+	        console.log(response.data[0].id)
 	        //return(response)
 	        //myDataRef.push({ID: response.value.id, date: new Date()})
 	        
