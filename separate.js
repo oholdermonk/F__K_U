@@ -28,6 +28,8 @@ function runPost(){
         			        /* handle the result */
         			        var thing1= new Firebase(myDataRef+snapshot.key());
         	    			thing1.remove();
+        			      } else {
+        			      	console.log(response);
         			      }
         			    }
         		    );
