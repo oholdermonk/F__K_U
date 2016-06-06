@@ -14,7 +14,7 @@ function runPost(){
         	snapshot.forEach(function(childSnapshot){
         		var childData = snapshot.val();
         		var date = new Date().getMonth();
-        		
+        		if(childData.DATE!=date){
         			console.log("BOOM");
                     FB.api(
         				childData.ID,
@@ -39,7 +39,7 @@ function runPost(){
         		
         	    });
             });
-        
+	}
 	
 	
 	
@@ -58,7 +58,7 @@ function quickPost(){
         	snapshot.forEach(function(childSnapshot){
         		var childData = snapshot.val();
         		var date = new Date().getMonth();
-        		if(childData.DATE==date){
+        		if(true){
         			console.log("BOOM");
                     FB.api(
         				childData.ID,
